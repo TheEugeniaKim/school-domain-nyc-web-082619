@@ -8,13 +8,11 @@ class School
     @roster = {}
   end
  
-  def add_student(student_name, student_grade)
-    @student = student_name
-    @grade = student_grade
+  def add_student(student, grade)
     if @roster[@grade] == nil 
       @roster << [@grade => (@student.to_s)]
-    else
-      
+    else 
+      @roster[@grade] << @student.to_s
     end 
   
   end 
