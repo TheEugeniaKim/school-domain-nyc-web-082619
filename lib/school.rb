@@ -23,7 +23,7 @@ class School
   
   def sort()
     roster.each do |grade, student|
-      return 
+      return roster.values.sort_by grade 
     end
   end
   
