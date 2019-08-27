@@ -12,7 +12,7 @@ class School
     @student = student_name
     @grade = student_grade
     @roster = {@grade => [@student.to_s]}
-    # @roster << {student_grade => ["student_name"]}
+    
   end 
   
 end
