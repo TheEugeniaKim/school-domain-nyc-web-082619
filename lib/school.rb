@@ -11,7 +11,7 @@ class School
   def add_student(student_name, student_grade)
     @student = student_name
     @grade = student_grade
-    @roster = {@grade => ['@student']}
+    @roster = {@grade => [@student.to_s]}
     # @roster << {student_grade => ["student_name"]}
   end 
   
