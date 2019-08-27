@@ -9,10 +9,10 @@ class School
   end
  
   def add_student(student, grade)
-    if @roster[@grade] == nil 
-      @roster < [@grade => (@student.to_s)]
+    if @roster[grade] == nil 
+      @roster < [grade => (student.to_s)]
     else 
-      @roster[@grade] < @student.to_s
+      @roster[grade] < student.to_s
     end 
   
   end 
