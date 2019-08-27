@@ -12,7 +12,8 @@ class School
     @student = student_name
     @grade = student_grade
     if @roster[@grade] == nil 
-      @roster[@grade] = [@student.to_s]
+      @roster[@grade] = []
+      @roster[@grade] << @student 
     end 
   
   end 
