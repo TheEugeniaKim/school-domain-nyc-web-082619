@@ -15,7 +15,10 @@ class School
     else 
       @roster[grade] << student 
     end 
-  
   end 
+  
+  def grade(grade) 
+    return @roster[grade] 
+  end
   
 end
