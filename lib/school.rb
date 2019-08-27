@@ -22,7 +22,8 @@ class School
   end
   
   def sort(roster)
-    return   
+    return roster.each do |grade, student|
+      
   end
   
 end
